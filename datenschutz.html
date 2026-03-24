@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datenschutzerklärung – Pochat Premium Automobile Baden-Baden</title>
+<meta name="description" content="Datenschutzerklärung von Pochat Premium Automobile Baden-Baden. Informationen zur Verarbeitung Ihrer personenbezogenen Daten gemäß DSGVO.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.pochat-automobile.de/datenschutz.html">
+
+<!-- Google Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ── CSS Custom Properties ── */
+:root {
+  --clr-white: #ffffff;
+  --clr-bg: #0b0b0f;
+  --clr-dark-50: #111116;
+  --clr-dark-100: #1a1a1f;
+  --clr-dark-200: #26262d;
+  --clr-dark-300: #35353d;
+  --clr-grey-50: #f8f8fa;
+  --clr-grey-100: #f0f0f4;
+  --clr-grey-200: #e2e2e8;
+  --clr-grey-300: #d0d0d8;
+  --clr-grey-400: #9898a0;
+  --clr-grey-500: #6e6e78;
+  --clr-grey-600: #52525a;
+  --clr-grey-700: #3a3a42;
+  --clr-grey-800: #28282e;
+  --clr-grey-900: #1a1a1f;
+  --clr-accent: #C9A96E;
+  --clr-accent-hover: #b08d4a;
+  --clr-accent-light: rgba(201,169,110,0.10);
+  --clr-accent-glow: rgba(201,169,110,0.25);
+  --clr-red: #c62828;
+  --clr-red-light: rgba(198,40,40,0.08);
+  --clr-red-hover: #a51f1f;
+  --ff-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --fs-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+  --fs-sm: clamp(0.8rem, 0.75rem + 0.3vw, 0.9rem);
+  --fs-base: clamp(0.95rem, 0.9rem + 0.3vw, 1.05rem);
+  --fs-md: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  --fs-lg: clamp(1.3rem, 1.1rem + 0.7vw, 1.7rem);
+  --fs-xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.4rem);
+  --fs-hero: clamp(2.2rem, 1.5rem + 2.5vw, 3.8rem);
+  --space-xs: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 0.6rem + 0.5vw, 1rem);
+  --space-md: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+  --space-xl: clamp(2rem, 1.2rem + 2.5vw, 4rem);
+  --space-xxl: clamp(3rem, 2rem + 3vw, 6rem);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-w: 1200px;
+}
+
+/* ── Reset ── */
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { font-family: var(--ff-sans); font-size: var(--fs-base); line-height: 1.7; color: var(--clr-grey-600); background: var(--clr-white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
+ul, ol { list-style: none; }
+
+/* ── Skip Link ── */
+.skip-link {
+  position: absolute; top: -100%; left: var(--space-md);
+  background: var(--clr-accent); color: var(--clr-white); padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm); z-index: 10000; font-weight: 600;
+}
+.skip-link:focus { top: var(--space-md); }
+
+/* ── Cookie Banner ── */
+.cookie-banner {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  background: var(--clr-dark-100); color: #cdcdd5;
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 -4px 30px rgba(0,0,0,0.5);
+  border-top: 1px solid var(--clr-dark-200);
+  transform: translateY(0); opacity: 1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-banner__inner {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md);
+}
+.cookie-banner__text { flex: 1 1 400px; font-size: var(--fs-sm); line-height: 1.6; }
+.cookie-banner__text a { color: var(--clr-accent); text-decoration: underline; }
+.cookie-banner__actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+.cookie-btn {
+  padding: var(--space-xs) var(--space-md); border-radius: var(--radius-sm);
+  font-size: var(--fs-sm); font-weight: 600; min-height: 44px;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.cookie-btn--accept { background: var(--clr-accent); color: var(--clr-bg); }
+.cookie-btn--accept:hover { background: var(--clr-accent-hover); }
+.cookie-btn--settings { background: transparent; color: #8e8e99; border: 1px solid var(--clr-dark-300); }
+.cookie-btn--settings:hover { border-color: #8e8e99; }
+.cookie-btn--reject { background: transparent; color: #8e8e99; }
+.cookie-btn--reject:hover { color: #cdcdd5; }
+
+/* ── Navigation ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: var(--space-md) var(--space-lg);
+  transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+}
+.nav--scrolled {
+  background: rgba(11,11,15,0.97);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 1px 0 rgba(201,169,110,0.15);
+  padding: var(--space-sm) var(--space-lg);
+}
+.nav__inner {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav__brand {
+  display: flex; align-items: center; gap: var(--space-sm);
+}
+.nav__logo {
+  height: 60px; width: auto;
+  transition: height var(--transition);
+}
+.nav--scrolled .nav__logo { height: 45px; }
+.nav__links {
+  display: flex; gap: var(--space-lg); align-items: center;
+}
+.nav__links a {
+  color: rgba(255,255,255,0.85); font-size: var(--fs-sm); font-weight: 500;
+  letter-spacing: 0.03em; text-transform: uppercase;
+  transition: color var(--transition); min-height: 44px;
+  display: flex; align-items: center;
+}
+.nav__links a:hover, .nav__links a:focus-visible { color: var(--clr-accent); }
+.nav__cta {
+  background: var(--clr-accent); color: var(--clr-bg) !important;
+  padding: var(--space-xs) var(--space-md); border-radius: var(--radius-sm);
+  font-weight: 600 !important;
+  transition: background var(--transition), transform var(--transition) !important;
+}
+.nav__cta:hover { background: var(--clr-accent-hover) !important; transform: translateY(-1px); }
+
+/* Language Switcher */
+.nav__lang {
+  display: flex; align-items: center; gap: 6px; margin-left: var(--space-sm);
+}
+.nav__lang a {
+  font-size: var(--fs-xs) !important; text-transform: uppercase !important;
+  color: var(--clr-grey-500) !important; font-weight: 600 !important;
+  letter-spacing: 0.05em;
+  padding: 2px 6px; border-radius: 3px;
+  transition: color var(--transition), background var(--transition);
+}
+.nav__lang a:hover { color: var(--clr-white) !important; }
+.nav__lang a.active { color: var(--clr-accent) !important; background: var(--clr-accent-light); }
+
+/* Burger */
+.burger {
+  display: none; flex-direction: column; justify-content: center;
+  width: 44px; height: 44px; gap: 6px; padding: 8px;
+}
+.burger__line {
+  width: 100%; height: 2px; background: var(--clr-white); border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.burger[aria-expanded="true"] .burger__line:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger[aria-expanded="true"] .burger__line:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] .burger__line:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ── Privacy Hero ── */
+.privacy-hero {
+  position: relative; min-height: 40vh;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(180deg, rgba(11,11,15,1) 0%, rgba(11,11,15,0.95) 50%, rgba(11,11,15,1) 100%);
+  overflow: hidden;
+  padding-top: 120px;
+}
+.privacy-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 80%, var(--clr-accent-light) 0%, transparent 60%);
+  pointer-events: none;
+}
+.privacy-hero__content {
+  position: relative; z-index: 2; text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+}
+.privacy-hero__tag {
+  display: inline-flex; align-items: center; gap: var(--space-sm);
+  font-size: var(--fs-xs); font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--clr-accent); margin-bottom: var(--space-md);
+}
+.privacy-hero__tag-line {
+  display: inline-block; width: 40px; height: 1px; background: var(--clr-accent);
+}
+.privacy-hero h1 {
+  font-size: var(--fs-hero); font-weight: 800;
+  color: var(--clr-white); line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+/* ── Privacy Content ── */
+.privacy-section {
+  padding: var(--space-xxl) var(--space-lg);
+}
+.privacy-section__inner {
+  max-width: 860px; margin: 0 auto;
+}
+.privacy-section__inner h2 {
+  font-size: var(--fs-xl); font-weight: 700;
+  color: var(--clr-grey-900); line-height: 1.2;
+  margin-top: var(--space-xxl); margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--clr-grey-200);
+}
+.privacy-section__inner h2:first-child {
+  margin-top: 0;
+}
+.privacy-section__inner h3 {
+  font-size: var(--fs-lg); font-weight: 600;
+  color: var(--clr-grey-800); line-height: 1.3;
+  margin-top: var(--space-xl); margin-bottom: var(--space-sm);
+}
+.privacy-section__inner h4 {
+  font-size: var(--fs-md); font-weight: 600;
+  color: var(--clr-accent); line-height: 1.4;
+  margin-top: var(--space-lg); margin-bottom: var(--space-xs);
+}
+.privacy-section__inner p {
+  font-size: var(--fs-base); color: var(--clr-grey-600);
+  line-height: 1.85; margin-bottom: var(--space-md);
+}
+.privacy-section__inner ul {
+  margin-bottom: var(--space-md); padding-left: var(--space-md);
+}
+.privacy-section__inner ul li {
+  font-size: var(--fs-base); color: var(--clr-grey-600);
+  line-height: 1.85; margin-bottom: var(--space-xs);
+  position: relative; padding-left: var(--space-md);
+}
+.privacy-section__inner ul li::before {
+  content: '';
+  position: absolute; left: 0; top: 0.7em;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--clr-accent);
+}
+.privacy-section__inner a {
+  color: var(--clr-accent); text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+.privacy-section__inner a:hover {
+  color: var(--clr-accent-hover);
+}
+.privacy-section__inner strong {
+  color: var(--clr-grey-800); font-weight: 600;
+}
+.privacy-meta {
+  font-size: var(--fs-sm); color: var(--clr-grey-500);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-md);
+  background: var(--clr-grey-50);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--clr-accent);
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--clr-dark-100);
+  padding: var(--space-xxl) var(--space-lg) var(--space-lg);
+  border-top: 1px solid var(--clr-dark-200);
+  color: #9898a0;
+}
+.footer__inner { max-width: var(--max-w); margin: 0 auto; }
+.footer__grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-xl); margin-bottom: var(--space-xl);
+}
+.footer__brand {
+  display: flex; align-items: center; gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+.footer__brand img { height: 150px; width: auto; }
+.footer__about { font-size: var(--fs-sm); line-height: 1.8; color: #8e8e99; margin-bottom: var(--space-md); }
+.footer__social { display: flex; gap: var(--space-sm); }
+.footer__social a {
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid var(--clr-dark-300);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition); color: #8e8e99;
+}
+.footer__social a:hover { border-color: var(--clr-accent); color: var(--clr-white); background: var(--clr-accent); }
+.footer h4 {
+  font-size: var(--fs-xs); font-weight: 700; color: var(--clr-white);
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-md);
+}
+.footer__links { display: flex; flex-direction: column; gap: var(--space-xs); }
+.footer__links a {
+  font-size: var(--fs-sm); color: #8e8e99;
+  transition: color var(--transition); min-height: 38px;
+  display: flex; align-items: center; gap: var(--space-xs);
+}
+.footer__links a:hover { color: var(--clr-accent); }
+.footer__links a i { font-size: 0.7em; color: var(--clr-dark-300); }
+.footer__contact-item {
+  display: flex; align-items: flex-start; gap: var(--space-xs);
+  font-size: var(--fs-sm); margin-bottom: var(--space-sm); color: #8e8e99;
+}
+.footer__contact-item i { color: var(--clr-accent); margin-top: 3px; font-size: 0.85em; }
+.footer__bottom {
+  border-top: 1px solid var(--clr-dark-200);
+  padding-top: var(--space-lg);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-md);
+  font-size: var(--fs-xs); color: #8e8e99;
+}
+.footer__legal { display: flex; gap: var(--space-md); }
+.footer__legal a { transition: color var(--transition); }
+.footer__legal a:hover { color: var(--clr-accent); }
+
+/* ── Animations ── */
+.reveal {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal--visible { opacity: 1; transform: translateY(0); }
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* ── Mobile Overlay ── */
+.nav__overlay {
+  display: none; position: fixed; inset: 0; z-index: 1001;
+  background: rgba(0,0,0,0.7); opacity: 0;
+  transition: opacity 0.35s ease; pointer-events: none;
+}
+.nav__overlay--visible { display: block; opacity: 1; pointer-events: auto; }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 767px) {
+  .nav__links {
+    position: fixed; top: 0; right: 0; bottom: 0;
+    width: 300px; max-width: 85vw;
+    background: var(--clr-dark-100);
+    flex-direction: column; padding: 100px var(--space-lg) var(--space-lg);
+    gap: 0; transform: translateX(100%);
+    transition: transform 0.35s ease;
+    box-shadow: -4px 0 40px rgba(0,0,0,0.5);
+    z-index: 1002;
+  }
+  .nav__links--open { transform: translateX(0); }
+  .nav__links a {
+    font-size: var(--fs-base) !important; padding: var(--space-sm) 0 !important;
+    border-bottom: 1px solid var(--clr-dark-200) !important;
+    color: #cdcdd5 !important;
+    text-transform: none !important; letter-spacing: 0 !important;
+  }
+  .nav__lang {
+    margin-left: 0 !important; margin-top: var(--space-md);
+    padding-top: var(--space-md); border-top: 1px solid var(--clr-dark-200);
+  }
+  .burger { display: flex; z-index: 1003; position: relative; }
+  .footer__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 479px) {
+  .privacy-hero h1 { font-size: clamp(1.8rem, 1.4rem + 2vw, 2.5rem); }
+}
+</style>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="cookie-banner__inner">
+    <div class="cookie-banner__text">
+      <p>Wir verwenden Cookies, um Ihnen ein optimales Erlebnis zu bieten. Weitere Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button type="button" class="cookie-btn cookie-btn--accept" id="cookieAccept">Alle akzeptieren</button>
+      <button type="button" class="cookie-btn cookie-btn--settings" id="cookieSettings">Einstellungen</button>
+      <button type="button" class="cookie-btn cookie-btn--reject" id="cookieReject">Nur notwendige</button>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Pochat Automobile – Startseite">
+      <img src="images/Pochat-logo-neu.jpg" alt="Pochat Premium Automobile Baden-Baden" class="nav__logo">
+    </a>
+    <div class="nav__links" id="navLinks" role="menubar">
+      <a href="index.html" role="menuitem">Start</a>
+      <a href="index.html#fahrzeuge" role="menuitem">Fahrzeuge</a>
+      <a href="index.html#leistungen" role="menuitem">Leistungen</a>
+      <a href="index.html#ueber-uns" role="menuitem">Über uns</a>
+      <a href="kontakt.html" role="menuitem" class="nav__cta"><i class="fas fa-envelope"></i> Kontakt</a>
+      <div class="nav__lang">
+        <a href="index.html" class="active" title="Deutsch">DE</a>
+        <a href="en/index.html" title="English">EN</a>
+        <a href="fr/index.html" title="Français">FR</a>
+      </div>
+    </div>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="navLinks" aria-label="Menü öffnen">
+      <span class="burger__line" aria-hidden="true"></span>
+      <span class="burger__line" aria-hidden="true"></span>
+      <span class="burger__line" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+</nav>
+
+<!-- Main Content -->
+<main id="main">
+
+<!-- Privacy Hero -->
+<section class="privacy-hero">
+  <div class="privacy-hero__content">
+    <div class="privacy-hero__tag">
+      <span class="privacy-hero__tag-line"></span>
+      Rechtliches
+      <span class="privacy-hero__tag-line"></span>
+    </div>
+    <h1>Datenschutzerklärung</h1>
+  </div>
+</section>
+
+<!-- Privacy Policy Content -->
+<section class="privacy-section">
+  <div class="privacy-section__inner reveal">
+
+    <div class="privacy-meta">
+      <strong>Stand:</strong> März 2026 &nbsp;|&nbsp; Diese Datenschutzerklärung gilt für die Website www.pochat-automobile.de
+    </div>
+
+    <!-- 1. Datenschutz auf einen Blick -->
+    <h2>1. Datenschutz auf einen Blick</h2>
+
+    <h3>Allgemeine Hinweise</h3>
+    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer nachfolgenden Datenschutzerklärung.</p>
+
+    <h3>Datenerfassung auf dieser Website</h3>
+
+    <h4>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
+    <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Verantwortliche Stelle" in dieser Datenschutzerklärung entnehmen.</p>
+
+    <h4>Wie erfassen wir Ihre Daten?</h4>
+    <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+    <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>
+
+    <h4>Wofür nutzen wir Ihre Daten?</h4>
+    <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+
+    <h4>Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
+    <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+    <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
+
+    <!-- 2. Verantwortliche Stelle -->
+    <h2>2. Verantwortliche Stelle</h2>
+    <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+    <p>
+      <strong>Werner Pochat</strong><br>
+      Pochat Premium Automobile<br>
+      Lange Str. 108<br>
+      76530 Baden-Baden
+    </p>
+    <p>
+      Telefon: +49 (0)7221 37412-20<br>
+      E-Mail: <a href="mailto:info@pochat-automobile.de">info@pochat-automobile.de</a>
+    </p>
+    <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o.&nbsp;Ä.) entscheidet.</p>
+
+    <!-- 3. Allgemeines zur Datenverarbeitung -->
+    <h2>3. Allgemeines zur Datenverarbeitung</h2>
+
+    <h3>Rechtsgrundlage</h3>
+    <p>Soweit wir für Verarbeitungsvorgänge personenbezogener Daten eine Einwilligung der betroffenen Person einholen, dient Art. 6 Abs. 1 lit. a EU-Datenschutzgrundverordnung (DSGVO) als Rechtsgrundlage für die Verarbeitung personenbezogener Daten.</p>
+    <p>Bei der Verarbeitung personenbezogener Daten, die zur Erfüllung eines Vertrages erforderlich ist, dient Art. 6 Abs. 1 lit. b DSGVO als Rechtsgrundlage. Dies gilt auch für Verarbeitungsvorgänge, die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind.</p>
+    <p>Soweit eine Verarbeitung personenbezogener Daten zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, der unser Unternehmen unterliegt, dient Art. 6 Abs. 1 lit. c DSGVO als Rechtsgrundlage.</p>
+    <p>Ist die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines Dritten erforderlich und überwiegen die Interessen, Grundrechte und Grundfreiheiten des Betroffenen das erstgenannte Interesse nicht, so dient Art. 6 Abs. 1 lit. f DSGVO als Rechtsgrundlage für die Verarbeitung.</p>
+
+    <h3>Speicherdauer</h3>
+    <p>Sofern innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.&nbsp;B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>
+
+    <!-- 4. Ihre Rechte -->
+    <h2>4. Ihre Rechte</h2>
+
+    <h3>Recht auf Auskunft</h3>
+    <p>Sie haben das Recht, gemäß Art. 15 DSGVO eine Bestätigung darüber zu verlangen, ob Sie betreffende personenbezogene Daten verarbeitet werden. Ist dies der Fall, so haben Sie ein Recht auf Auskunft über diese personenbezogenen Daten sowie auf die in Art. 15 DSGVO im Einzelnen aufgeführten Informationen.</p>
+
+    <h3>Recht auf Berichtigung</h3>
+    <p>Sie haben das Recht, gemäß Art. 16 DSGVO unverzüglich die Berichtigung Sie betreffender unrichtiger personenbezogener Daten zu verlangen. Unter Berücksichtigung der Zwecke der Verarbeitung haben Sie das Recht, die Vervollständigung unvollständiger personenbezogener Daten zu verlangen.</p>
+
+    <h3>Recht auf Löschung</h3>
+    <p>Sie haben das Recht, gemäß Art. 17 DSGVO zu verlangen, dass Sie betreffende personenbezogene Daten unverzüglich gelöscht werden. Der Verantwortliche ist verpflichtet, personenbezogene Daten unverzüglich zu löschen, sofern einer der folgenden Gründe zutrifft:</p>
+    <ul>
+      <li>Die personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig.</li>
+      <li>Die betroffene Person widerruft ihre Einwilligung und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.</li>
+      <li>Die betroffene Person legt gemäß Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor.</li>
+      <li>Die personenbezogenen Daten wurden unrechtmäßig verarbeitet.</li>
+      <li>Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung erforderlich.</li>
+    </ul>
+
+    <h3>Recht auf Einschränkung der Verarbeitung</h3>
+    <p>Sie haben das Recht, gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung zu verlangen, wenn eine der folgenden Voraussetzungen gegeben ist:</p>
+    <ul>
+      <li>Die Richtigkeit der personenbezogenen Daten wird von der betroffenen Person bestritten, und zwar für eine Dauer, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen.</li>
+      <li>Die Verarbeitung ist unrechtmäßig und die betroffene Person lehnt die Löschung der personenbezogenen Daten ab und verlangt stattdessen die Einschränkung der Nutzung.</li>
+      <li>Der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger, die betroffene Person benötigt sie jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</li>
+      <li>Die betroffene Person hat Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 DSGVO eingelegt und es steht noch nicht fest, ob die berechtigten Gründe des Verantwortlichen gegenüber denen der betroffenen Person überwiegen.</li>
+    </ul>
+
+    <h3>Recht auf Datenübertragbarkeit</h3>
+    <p>Sie haben das Recht, gemäß Art. 20 DSGVO Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+
+    <h3>Recht auf Widerspruch</h3>
+    <p><strong>Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Art. 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, soweit dafür Gründe vorliegen, die sich aus Ihrer besonderen Situation ergeben.</strong></p>
+    <p>Möchten Sie von Ihrem Widerspruchsrecht Gebrauch machen, genügt eine E-Mail an <a href="mailto:info@pochat-automobile.de">info@pochat-automobile.de</a>.</p>
+
+    <h3>Beschwerderecht bei der Aufsichtsbehörde</h3>
+    <p>Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt. Die zuständige Aufsichtsbehörde ist:</p>
+    <p>
+      Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
+      Lautenschlagerstraße 20<br>
+      70173 Stuttgart<br>
+      Telefon: +49 (0)711 6155 41-0<br>
+      E-Mail: <a href="mailto:poststelle@lfdi.bwl.de">poststelle@lfdi.bwl.de</a>
+    </p>
+
+    <!-- 5. Datenerfassung auf dieser Website -->
+    <h2>5. Datenerfassung auf dieser Website</h2>
+
+    <h3>Cookies</h3>
+    <p>Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.</p>
+    <p>Cookies können von uns (First-Party-Cookies) oder von Drittunternehmen stammen (sog. Third-Party-Cookies). Third-Party-Cookies ermöglichen die Einbindung bestimmter Dienstleistungen von Drittunternehmen innerhalb von Webseiten (z.&nbsp;B. Cookies zur Abwicklung von Zahlungsdienstleistungen).</p>
+    <p>Technisch notwendige Cookies werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von technisch notwendigen Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Sofern eine Einwilligung zur Speicherung von Cookies und vergleichbaren Wiedererkennungstechnologien abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit widerrufbar.</p>
+    <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>
+
+    <h3>Kontaktformular</h3>
+    <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+    <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde.</p>
+    <p>Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.</p>
+
+    <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
+    <p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+    <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde.</p>
+    <p>Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.</p>
+
+    <!-- 6. Hosting -->
+    <h2>6. Hosting</h2>
+    <p>Wir hosten die Inhalte unserer Website bei einem externen Dienstleister (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.&nbsp;a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+    <p>Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers umfasst.</p>
+    <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+
+    <h4>Auftragsverarbeitung</h4>
+    <p>Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.</p>
+
+    <!-- 7. Analyse-Tools und Werbung -->
+    <h2>7. Analyse-Tools und Werbung</h2>
+    <p>Aktuell setzen wir auf dieser Website keine Analyse-Tools (wie z.&nbsp;B. Google Analytics) oder Werbepixel ein. Sollte sich dies in Zukunft ändern, werden wir diese Datenschutzerklärung entsprechend aktualisieren und Sie gegebenenfalls vorab um Ihre Einwilligung bitten.</p>
+
+    <!-- 8. SSL/TLS-Verschlüsselung -->
+    <h2>8. SSL-/TLS-Verschlüsselung</h2>
+    <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+    <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+
+  </div>
+</section>
+
+</main>
+
+<!-- Footer (3-Column) -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <!-- Column 1: Brand -->
+      <div>
+        <div class="footer__brand">
+          <img src="images/Pochat-logo-neu.jpg" alt="Pochat Premium Automobile" loading="lazy">
+        </div>
+        <p class="footer__about">Pochat Premium Automobile — Ihr Spezialist für exklusive Sportwagen, Luxusautos und Premiumfahrzeuge in Baden-Baden. Faszination und Exklusivität seit über 30 Jahren.</p>
+        <div class="footer__social">
+          <a href="mailto:info@pochat-automobile.de" aria-label="E-Mail">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+4972213741220" aria-label="Telefon">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Navigation -->
+      <div>
+        <h4>Navigation</h4>
+        <div class="footer__links">
+          <a href="index.html"><i class="fas fa-chevron-right"></i> Startseite</a>
+          <a href="fahrzeuge.html"><i class="fas fa-chevron-right"></i> Alle Fahrzeuge</a>
+          <a href="leistungen.html"><i class="fas fa-chevron-right"></i> Leistungen</a>
+          <a href="ueber-uns.html"><i class="fas fa-chevron-right"></i> Über uns</a>
+          <a href="vita.html"><i class="fas fa-chevron-right"></i> Vita Werner Pochat</a>
+          <a href="events.html"><i class="fas fa-chevron-right"></i> Events</a>
+          <a href="kontakt.html"><i class="fas fa-chevron-right"></i> Kontakt</a>
+        </div>
+      </div>
+
+      <!-- Column 3: Kontakt -->
+      <div>
+        <h4>Kontakt</h4>
+        <div class="footer__contact-item">
+          <i class="fas fa-location-dot"></i>
+          <span>Lange Straße 108<br>76530 Baden-Baden</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+49 (0)7221 37412-20</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@pochat-automobile.de</span>
+        </div>
+        <div class="footer__contact-item" style="margin-top:var(--space-md);">
+          <i class="fas fa-clock"></i>
+          <span>Mo–Fr: 9:30–18:00<br>Sa: 9:30–13:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 Pochat Premium Automobile Baden-Baden. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inline JavaScript -->
+<script>
+(function(){
+  'use strict';
+
+  /* ── Cookie Banner ── */
+  var cookieBanner = document.getElementById('cookieBanner');
+  var cookieAccept = document.getElementById('cookieAccept');
+  var cookieReject = document.getElementById('cookieReject');
+  var cookieSettings = document.getElementById('cookieSettings');
+
+  function hideCookie() {
+    cookieBanner.style.transform = 'translateY(100%)';
+    cookieBanner.style.opacity = '0';
+    setTimeout(function() { cookieBanner.hidden = true; }, 400);
+  }
+
+  if (localStorage.getItem('cookie-consent')) {
+    cookieBanner.hidden = true;
+  }
+
+  cookieAccept.addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'all');
+    hideCookie();
+  });
+  cookieReject.addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'essential');
+    hideCookie();
+  });
+  cookieSettings.addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'essential');
+    hideCookie();
+  });
+
+  /* ── Navigation Scroll ── */
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function() {
+    if ((window.pageYOffset || document.documentElement.scrollTop) > 60) {
+      nav.classList.add('nav--scrolled');
+    } else {
+      nav.classList.remove('nav--scrolled');
+    }
+  }, { passive: true });
+
+  /* ── Burger Menu ── */
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  var navOverlay = document.getElementById('navOverlay');
+
+  function closeMenu() {
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Menü öffnen');
+    navLinks.classList.remove('nav__links--open');
+    navOverlay.classList.remove('nav__overlay--visible');
+    navOverlay.setAttribute('aria-hidden', 'true');
+  }
+
+  function openMenu() {
+    burger.setAttribute('aria-expanded', 'true');
+    burger.setAttribute('aria-label', 'Menü schließen');
+    navLinks.classList.add('nav__links--open');
+    navOverlay.classList.add('nav__overlay--visible');
+    navOverlay.setAttribute('aria-hidden', 'false');
+  }
+
+  burger.addEventListener('click', function() {
+    if (burger.getAttribute('aria-expanded') === 'true') { closeMenu(); } else { openMenu(); }
+  });
+
+  navOverlay.addEventListener('click', closeMenu);
+
+  var links = navLinks.querySelectorAll('a');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', closeMenu);
+  }
+
+  /* ── IntersectionObserver ── */
+  function initObserver() {
+    if (!('IntersectionObserver' in window)) {
+      var reveals = document.querySelectorAll('.reveal');
+      for (var r = 0; r < reveals.length; r++) reveals[r].classList.add('reveal--visible');
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      requestAnimationFrame(function() {
+        for (var e = 0; e < entries.length; e++) {
+          if (entries[e].isIntersecting) {
+            entries[e].target.classList.add('reveal--visible');
+            observer.unobserve(entries[e].target);
+          }
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    var elements = document.querySelectorAll('.reveal');
+    for (var el = 0; el < elements.length; el++) observer.observe(elements[el]);
+  }
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(initObserver);
+  } else {
+    window.addEventListener('load', initObserver);
+  }
+
+})();
+</script>
+</body>
+</html>
